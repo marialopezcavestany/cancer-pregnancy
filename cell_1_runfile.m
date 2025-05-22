@@ -1,8 +1,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                                                        %
-%        Elevated Prolactin Signaling During Pregnancy Increases         %
-%                   Colorectal Cancer Aggressiveness                     %
+%        The Growing Trend of Colorectal Cancer During Pregnancy:        %
+%        A Study of Prolactin Signaling and Cancer Aggressiveness        %
 %                                                                        %
 %    Maria Lopez-Cavestany*, Olivia A. Wright*, Alexandria T. Carter*,   %
 %           Brittany O'Brien^, Cathy Eng^, Michael R. King*              %
@@ -32,15 +32,16 @@ clear
 %DEFINING INITIAL CONCENTRATIONS
 
 %Set non-zero initial values
-PRL = 60; %ng/mL
+PRL = 123; %ng/mL
 PRL = PRL*0.04545; %Calculate the concentration in nM
-RJ = 29.61412735; 
-S3c = 117.5831695;
+RJ = 5.0802; 
+S3c = 117.1798;
 SHP2 = 78.23736788;
-PPX = 67.28710804;
+PPX = 70.3604;
 PPN = 143.870996;
 pS3c = 0;
-S3n = 100; 
+S3n = 101.8617; 
+JAG = 0.1528;
 
 %Set zero values and fill in non-zero initial values
 y0 = zeros(1,35);
@@ -52,6 +53,7 @@ y0(5) = PPX;
 y0(6) = PPN;
 y0(11) = pS3c;
 y0(20) = S3n;
+y0(34) = JAG;
 
 
 %DEFINING THE TIME SPAN
