@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                                                        %
-%        Elevated Prolactin Signaling During Pregnancy Increases         %
-%                   Colorectal Cancer Aggressiveness                     %
+%        The Growing Trend of Colorectal Cancer During Pregnancy:        %
+%        A Study of Prolactin Signaling and Cancer Aggressiveness        %
 %                                                                        %
 %    Maria Lopez-Cavestany*, Olivia A. Wright*, Alexandria T. Carter*,   %
 %           Brittany O'Brien^, Cathy Eng^, Michael R. King*              %
@@ -43,25 +43,25 @@ JAG1 = y(35);
 k1 = 3.08E-03;
 
 %Reaction 2: PRL + RJ <-> PRLRJ
-k2f = 6.02E-05; k2r = 0.007718302;
+k2f = 7.7971E-04; k2r = 0.005;
 
 %Reaction 3: 2 PRLRJ <-> PRLRJ2
 k3f = 0.063415984; k3r = 0.2;
 
 %Reaction 4: PRLRJ2 -> PRLRJ2a
-k4 = 0.00539118;
+k4 = 0.0052;
 
 %Reaction 5: PRLRJ2a + S3c <-> PRLRJ2aS3c
-k5f = 0.007981659; k5r = 8.00E-01;
+k5f = 0.0124; k5r = 8.00E-01;
 
 %Reaction 6: PRLRJ2aS3c -> pS3c + PRLRJ2a
-k6 = 0.541149983;
+k6 = 0.4417;
 
 %Reaction 7: RJ ->, PRLRJ ->, PRLR2 ->, PRLJ2a ->
-kdeg = 2.57E-04; deg_ratio = 14.03077053;
+kdeg = 2.57E-04; deg_ratio = 7.1442;
 
 %Reaction 8: pS3c + pS3c <-> pS3pS3c
-k8f = 0.097284392; k8r = 1.00E-01;
+k8f = 0.1814; k8r = 1.00E-01;
 
 %Reaction 9: PRLRJ2a + SHP <-> PRLRJ2aSHP
 k9f = 0.000879762; k9r = 2.00E-01;
@@ -70,10 +70,10 @@ k9f = 0.000879762; k9r = 2.00E-01;
 k10 = 3.00E-03;
 
 %Reaction 11: PPX + pS3cpS3c <-> PPXpS3cpS3c, PPX + pS3c <-> PPXpS3c
-k11f = 0.001550919; k11r = 2.00E-01;
+k11f = 0.0028; k11r = 2.00E-01;
 
 %Reaction 12: PPXpS3cpS3c -> PPX + pS3c + S3c, PPXpS3c -> PPX + S3c
-k12 = 0.003786421;
+k12 = 0.0031;
 
 %Reaction 13: pS3c + S3c <-> pS3cS3c, pS3n + S3n <-> pS3nS3n
 k13f = 2.00E-07; k13r = 0.225430866;
@@ -106,13 +106,13 @@ k21f = 0.052168498; k21r = 1.00E-01;
 k22 = 0.000506751;
 
 %Reaction 23: SOCS1 ->
-k23 = 0.00067935;
+k23 = 6.8485E-04;
 
 %Reaction 24: SOCS1PRLRJ2a ->
 k24 = 0.00124969;
 
 %Reaction 25: pS33n -> mRNARJn + pS33n (2-step reaction)
-k25_1 = 0.017692191; k25_2 = 4.00E+02;
+k25_1 = 0.0056; k25_2 = 4.00E+02;
 
 %Reaction 26: mRNARJn -> mRNARJc
 k26 = 1.00E-03;
@@ -121,25 +121,25 @@ k26 = 1.00E-03;
 k27 = 6.12582E-05;
 
 %Reaction 28: mRNARJc -> RJc + mRNARJc
-k28 = 0.012796615;
+k28 = 0.0132;
 
 %Reaction 29: RJc -> RJ
 k29 = 1.00E-02;
 
 %Reaction 30: pS3npS3n -> mRNAJAG1n + pS3npS3n (2-step reaction)
-k30_1 = 0.003396888; k30_2 = 4.00E+02;
+k30_1 = 0.0021; k30_2 = 4.00E+02;
 
 %Reaction 31: mRNAJAG1n -> mRNAJAG1c
-k31 = 0.001281906;
+k31 = 0.0011;
 
 %Reaction 32: mRNAJAG1c ->
 k32 = 5.00E-04;
 
 %Reaction 33: mRNAJAG1c -> JAG1c + mRNAJAG1c
-k33 = 0.016705937;
+k33 = 0.0099;
 
 %Reaction 34: JAG1c -> JAG1
-k34 = 8.88E-06;
+k34 = 1.4518E-04;
 
 %Other parameters
 Vratio = 5.00E-01;
