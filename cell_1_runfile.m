@@ -32,7 +32,7 @@ clear
 %DEFINING INITIAL CONCENTRATIONS
 
 %Set non-zero initial values
-PRL = 123; %ng/mL
+PRL = 120; %ng/mL
 PRL = PRL*0.04545; %Calculate the concentration in nM
 RJ = 5.0802; 
 S3c = 117.1798;
